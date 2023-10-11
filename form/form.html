@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Registration Form</title>
+</head>
+<body>
+<div class="container">
+<form id="registration-form">
+<h1>Registration Form</h1>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+<span id="username-error" class="error-message">Username must be more than 5
+characters</span>
+<label for="phone">Phone Number:</label>
+<input type="text" id="phone" name="phone" required>
+<span id="phone-error" class="error-message">Must be a 10-digit number and not
+123456789</span>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<span id="email-error" class="error-message">Enter correct email</span>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/OOjs_UI_icon_eyeClosed.svg/12
+00px-OOjs_UI_icon_eyeClosed.svg.png" class="eyeicon" id="eyeicon">
+<span id="password-error" class="error-message">Password is not strong</span>
+<label for="confirm-password">Confirm Password:</label>
+<input type="password" id="confirm-password" name="confirm-password" required>
+<span id="confirm-password-error" class="error-message">Passwords should match</span>
+<button type="submit">Register</button>
+</form>
+<div id="message" class="hidden">
+Great job!
+Your form has been submitted successfully.
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
